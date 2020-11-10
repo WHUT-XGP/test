@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>【Vue3学习笔记】(一) 创建Vue项目 | AX的vuepress博客</title>
+    <meta name="generator" content="VuePress 1.6.0">
+    
+    <meta name="description" content="记录AX的前端学习记录">
+    <link rel="preload" href="./assets/css/0.styles.6030c24d.css" as="style"><link rel="preload" href="./assets/js/app.df112fcb.js" as="script"><link rel="preload" href="./assets/js/2.eb87300e.js" as="script"><link rel="preload" href="./assets/js/10.a82573aa.js" as="script"><link rel="prefetch" href="./assets/js/3.db1b9e5e.js"><link rel="prefetch" href="./assets/js/4.b41e69dd.js"><link rel="prefetch" href="./assets/js/5.5bc5eaa4.js"><link rel="prefetch" href="./assets/js/6.e416f727.js"><link rel="prefetch" href="./assets/js/7.a9f364c5.js"><link rel="prefetch" href="./assets/js/8.adcbfe28.js"><link rel="prefetch" href="./assets/js/9.67b1755f.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.6030c24d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/./" class="home-link router-link-active"><img src="./head.png" alt="AX的vuepress博客" class="logo"> <span class="site-name can-hide">AX的vuepress博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/./" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/./vue3/" class="nav-link router-link-active">
+  vue3学习
+</a></div><div class="nav-item"><a href="https://xgpax.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的wordpress博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/WHUT-XGP" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/./" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/./vue3/" class="nav-link router-link-active">
+  vue3学习
+</a></div><div class="nav-item"><a href="https://xgpax.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的wordpress博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/WHUT-XGP" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/./vue3/" aria-current="page" class="sidebar-link">/vue3/</a></li><li><a href="/./vue3/创建Vue3项目.html" class="active sidebar-link">【Vue3学习笔记】(一) 创建Vue项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/./vue3/创建Vue3项目.html#一、vue3官网地址" class="sidebar-link">一、Vue3官网地址：</a></li><li class="sidebar-sub-header"><a href="/./vue3/创建Vue3项目.html#二、起步" class="sidebar-link">二、起步</a></li></ul></li><li><a href="/./vue3/setup ref reactive与生命周期.html" class="sidebar-link">[Vue3学习笔记] (二) setup ref reactive与生命周期</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="【vue3学习笔记】-一-创建vue项目"><a href="#【vue3学习笔记】-一-创建vue项目" class="header-anchor">#</a> 【Vue3学习笔记】(一) 创建Vue项目</h1> <h2 id="一、vue3官网地址"><a href="#一、vue3官网地址" class="header-anchor">#</a> 一、Vue3官网地址：</h2> <p>https://v3.vuejs.org</p> <h2 id="二、起步"><a href="#二、起步" class="header-anchor">#</a> 二、起步</h2> <h3 id="_2-1-使用vue3"><a href="#_2-1-使用vue3" class="header-anchor">#</a> 2.1 使用vue3</h3> <h4 id="通过cdn形式使用vue3"><a href="#通过cdn形式使用vue3" class="header-anchor">#</a> 通过CDN形式使用Vue3</h4> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpk.com/vue@next<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="通过-vue-cli使用vue项目"><a href="#通过-vue-cli使用vue项目" class="header-anchor">#</a> 通过@vue/cli使用vue项目</h4> <p>@vue/cli已经支持在创建项目的时候使用vue3了
+在创建面板选择即可</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 全局安装@vue/cli,如果出错建议试试cnpm</span>
+<span class="token function">npm</span> <span class="token function">install</span> -g @vue/cli
+vue create hello-vue3
+</code></pre></div><p>创建的时候勾选vue3，其他操作同vue2的时候类似操作保持一致即可。</p> <h4 id="通过vite使用vue3"><a href="#通过vite使用vue3" class="header-anchor">#</a> 通过vite使用vue3</h4> <p>创建项目：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> init vite-app hello-vue3
+<span class="token comment"># OR</span>
+<span class="token function">yarn</span> create vite-app hello-vue3
+</code></pre></div><p>安装依赖：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">cd</span> hello-vue3
+<span class="token function">yarn</span>
+<span class="token comment"># OR</span>
+<span class="token builtin class-name">cd</span> hello-vue3
+<span class="token function">npm</span> <span class="token function">install</span>
+</code></pre></div><p>启动：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> run dev
+<span class="token comment"># OR</span>
+<span class="token function">yarn</span> dev
+</code></pre></div><p>通过这个安装方法进行一系列的创建项目-安装依赖-启动项目，速度会快很多很多！（摸鱼失败
+vite属实神器（尤大牛！）
+上个图：
+<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6fb751a8e6fc4e048ea248a8a132915f~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p> <p>创建好的项目的目录结构仍然和vue2接近</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/./vue3/" class="prev router-link-active">
+        /vue3/
+      </a></span> <span class="next"><a href="/./vue3/setup ref reactive与生命周期.html">
+        [Vue3学习笔记] (二) setup ref reactive与生命周期
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.df112fcb.js" defer></script><script src="./assets/js/2.eb87300e.js" defer></script><script src="./assets/js/10.a82573aa.js" defer></script>
+  </body>
+</html>
